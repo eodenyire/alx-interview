@@ -1,6 +1,17 @@
-#!/usr/bin/python3
 """
-Pascal's Triangle
+Pascal's Triangle Generator
+
+This script defines a function to generate Pascal's Triangle up to n levels.
+Pascal's Triangle is a triangular array of binomial coefficients where 
+each number is the sum of the two directly above it.
+
+Example:
+    The first 5 levels of Pascal's Triangle are:
+        [1]
+        [1, 1]
+        [1, 2, 1]
+        [1, 3, 3, 1]
+        [1, 4, 6, 4, 1]
 """
 
 
