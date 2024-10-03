@@ -5,9 +5,11 @@ Pascal's Triangle Generator
 
 
 def pascal_triangle(n):
-    """Returns a list of integers representing Pascal’s triangle of n."""
+    """
+    Returns a list of integers representing Pascal’s triangle of n.
+    """
     if n <= 0:
-        return []  # Return an empty list if n is less than or equal to 0
+        return []
 
     res = []
     for i in range(1, n + 1):
