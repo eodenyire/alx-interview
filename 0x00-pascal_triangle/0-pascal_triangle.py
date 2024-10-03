@@ -3,6 +3,7 @@
 Pascal's Triangle Generator
 """
 
+
 def pascal_triangle(n):
     """Returns a list of integers representing Pascal’s triangle of n."""
     if n <= 0:
