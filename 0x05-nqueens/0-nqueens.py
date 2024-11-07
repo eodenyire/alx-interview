@@ -3,7 +3,7 @@
 import sys
 
 
-if len(sys.argv) > 2 or len(sys.argv) < 2:
+if len(sys.argv) != 2:
     print("Usage: nqueens N")
     exit(1)
 
@@ -30,15 +30,11 @@ def queens(n, i=0, a=[], b=[], c=[]):
 
 def solve(n):
     """ solve """
-    k = []
-    i = 0
     for solution in queens(n, 0):
-        for s in solution:
-            k.append([i, s])
-            i += 1
-        print(k)
         k = []
-        i = 0
+        for i, s in enumerate(solution):
+            k.append([i, s])
+        print(k)
 
 
 solve(n)
